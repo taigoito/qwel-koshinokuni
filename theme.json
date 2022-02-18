@@ -146,7 +146,7 @@
 			"h1": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
-					"fontWeight": "400",
+					"fontWeight": "700",
 					"fontSize": "var(--wp--custom--font-size--x-large)",
 					"lineHeight": "var(--wp--custom--line-height--x-small)"
 				}
@@ -154,7 +154,7 @@
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
-					"fontWeight": "400",
+					"fontWeight": "700",
 					"fontSize": "var(--wp--custom--font-size--large)",
 					"lineHeight": "var(--wp--custom--line-height--x-small)"
 				}
@@ -162,7 +162,7 @@
 			"h3": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
-					"fontWeight": "400",
+					"fontWeight": "700",
 					"fontSize": "var(--wp--custom--font-size--medium)",
 					"lineHeight": "var(--wp--custom--line-height--x-small)"
 				}
@@ -215,12 +215,24 @@
 			"title": "Section Hero"
 		},
 		{
-			"name": "section-about",
-			"title": "Section About"
+			"name": "section-project",
+			"title": "Section Project"
+		},
+		{
+			"name": "section-activity",
+			"title": "Section Activity"
+		},
+		{
+			"name": "section-spot",
+			"title": "Section Spot"
 		},
 		{
 			"name": "section-news",
 			"title": "Section News"
+		},
+		{
+			"name": "section-movie",
+			"title": "Section Movie"
 		},
 		{
 			"name": "section-access",

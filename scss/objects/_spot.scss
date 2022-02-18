@@ -1,0 +1,29 @@
+/**
+ * Project - Spot
+ */
+
+.spot {
+  &__location {
+    flex: 8 1 36rem;
+    
+    @media (min-width: breakpoint("md")) {
+      flex: 4 1 18rem;
+    }
+  }
+
+  &__subImage {
+    flex: 0 1 54rem;
+
+    @media (min-width: breakpoint("md")) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__subContent {
+    flex: 0 1 36rem;
+
+    @media (min-width: breakpoint("md")) {
+      flex: 0 1 27rem;
+    }
+  }
+}

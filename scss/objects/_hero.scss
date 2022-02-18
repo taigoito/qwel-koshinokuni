@@ -1,0 +1,160 @@
+/**
+ * Project - Hero
+ */
+
+.hero {
+  &__inner {
+    min-height: 70vw !important; // Base
+
+    @media (min-width: breakpoint("sm")) {
+      min-height: 63vw !important; // Base * 90%
+    }
+
+    @media (min-width: breakpoint("md")) {
+      min-height: 42rem !important; // Base * 60% (rem)
+    }
+  }
+
+  &__container {
+    position: relative;
+    width: 90vw; // Base
+    margin: auto;
+
+    @media (min-width: breakpoint("sm")) {
+      width: 81vw; // Base * 90%
+    }
+
+    @media (min-width: breakpoint("md")) {
+      width: 54rem; // Base * 60% (rem)
+    }
+  }
+
+  &__largeText {
+    font-weight: 700;
+    font-size: 9vw; // Base
+    line-height: 1.5;
+    overflow: hidden; // Fix a bug on Safari.
+
+    @media (min-width: breakpoint("sm")) {
+      font-size: 6.75vw; // Base * 75%
+    }
+
+    @media (min-width: breakpoint("md")) {
+      font-size: 4.5rem; // Base * 50% (rem)
+    }
+
+    span:nth-of-type(1) ruby {
+      color: #187010;
+    }
+
+    span:nth-of-type(2) ruby {
+      color: #ef6d10;
+    }
+
+    span:nth-of-type(3) ruby {
+      color: #1092ef;
+    }
+
+    rt {
+      display: table-cell;
+    }
+  }
+
+  &__smallText {
+    font-weight: 700;
+    font-size: 2vw; // Base
+
+    @media (min-width: breakpoint("sm")) {
+      font-size: 1.5vw; // Base * 75%
+    }
+
+    @media (min-width: breakpoint("md")) {
+      font-size: 1rem; // Base * 50% (rem)
+    }
+  }
+
+  &__animate {
+    display: none;
+
+    &.animate {
+      display: inline-block;
+      animation: flip 4s ease-in-out;
+    }
+  }
+
+  &__videoClip {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 64.8vw; // Base
+    height: 64.8vw;
+    margin: auto;
+    border: 1vw solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @media (min-width: breakpoint("sm")) {
+      width: 48.6vw; // Base * 75%
+      height: 48.6vw;
+    }
+
+    @media (min-width: breakpoint("md")) {
+      width: 32.4rem; // Base * 50% (rem)
+      height: 32.4rem;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    bottom: 0;
+    width: 115.2vw; // Base (16 : 9)
+    height: 64.8vw;
+    margin: auto;
+
+    @media (min-width: breakpoint("sm")) {
+      width: 86.3vw; // Base * 75%
+      height: 48.6vw;
+    }
+
+    @media (min-width: breakpoint("md")) {
+      width: 57.6rem; // Base * 50% (rem)
+      height: 32.4rem;
+    }
+  }
+}
+
+@keyframes flip {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+
+  17% {
+    opacity: 1;
+    transform: rotateX(30deg);
+  }
+
+  33% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+
+  67% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+
+  83% {
+    opacity: 1;
+    transform: rotateX(30deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+}

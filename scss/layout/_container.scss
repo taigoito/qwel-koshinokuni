@@ -17,12 +17,24 @@
 
 %__container {
   gap: 0 !important;
+  padding-left: var(--wp--custom--spacing--container-pad);
+  padding-right: var(--wp--custom--spacing--container-pad);
+}
+
+%__containerWide {
+  gap: 0 !important;
   padding-left: var(--wp--custom--spacing--container-pad-wide);
   padding-right: var(--wp--custom--spacing--container-pad-wide);
 }
 
 .header, .gNav, .main, .breadcrumb, .titleArea, .postList, .postItem, .footer,
-.about, .news, .access, .contact {
+.access, .contact {
+  &__container {
+    @extend %__containerWide;
+  }
+}
+
+.news, .project, .activity, .spot {
   &__container {
     @extend %__container;
   }
