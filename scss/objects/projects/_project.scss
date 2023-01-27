@@ -6,4 +6,8 @@
   &__lead {
     letter-spacing: .4em;
   }
+
+  &__image, &__content {
+    @include col(4, "md", true);
+  }
 }

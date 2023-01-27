@@ -3,16 +3,21 @@
  */
 
 .spot {
-  &__location {
-    flex: 8 1 36rem;
-    
-    @media (min-width: breakpoint("md")) {
-      flex: 4 1 18rem;
+
+  &__item {
+    &:first-child {
+      @include col(3, "md", true);
+    }
+
+    &:not(:first-child) {
+      @include col(2, "xs", true);
+      @include col(3, "sm", true);
     }
   }
 
   &__subImage {
-    flex: 0 1 54rem;
+    @include col(9);
+    padding: 0;
 
     @media (min-width: breakpoint("md")) {
       flex: 0 1 50%;
@@ -20,7 +25,7 @@
   }
 
   &__subContent {
-    flex: 0 1 36rem;
+    @include col(6);
 
     @media (min-width: breakpoint("md")) {
       flex: 0 1 27rem;

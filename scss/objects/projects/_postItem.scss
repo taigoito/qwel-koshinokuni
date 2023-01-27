@@ -1,0 +1,13 @@
+/**
+ * Project - Post Item
+ */
+
+.postItem {
+  &__image {
+    @include col(2, "md", true);
+  }
+
+  &__content {
+    @include col(6, "md", true);
+  }
+}
