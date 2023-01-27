@@ -16,26 +16,45 @@
 // [Content]: flexitemクラスを付与し、コンテンツ幅を制御する
 
 %__container {
-  gap: 0 !important;
-  padding-left: var(--wp--custom--spacing--container-pad);
-  padding-right: var(--wp--custom--spacing--container-pad);
+  position: relative;
+  flex: auto;
+  gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-%__containerWide {
-  gap: 0 !important;
-  padding-left: var(--wp--custom--spacing--container-pad-wide);
-  padding-right: var(--wp--custom--spacing--container-pad-wide);
+%__containerSm {
+  @extend %__container;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+%__containerMd {
+  @extend %__container;
+  padding-left: map-get($containerPad, "md");
+  padding-right: map-get($containerPad, "md");
+}
+
+%__containerLg {
+  @extend %__container;
+  padding-left: map-get($containerPad, "lg");
+  padding-right: map-get($containerPad, "lg");
 }
 
 .header, .gNav, .main, .breadcrumb, .titleArea, .postList, .postItem, .footer,
 .access, .contact {
   &__container {
-    @extend %__containerWide;
+    gap: 0 !important;
+    padding-left: var(--wp--custom--spacing--container-pad-wide);
+    padding-right: var(--wp--custom--spacing--container-pad-wide);
   }
 }
 
 .news, .project, .activity, .spot {
   &__container {
-    @extend %__container;
+    gap: 0 !important;
+    padding-left: var(--wp--custom--spacing--container-pad);
+    padding-right: var(--wp--custom--spacing--container-pad);
   }
 }
