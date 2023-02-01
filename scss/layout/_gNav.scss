@@ -3,15 +3,24 @@
  */
 
 .gNav {
+  @include row(space-between);
+  height: 100%;
+
+  &__siteBrand {
+    width: clamp(4.5rem, 8% ,6rem);
+  }
+
   &__primaryMenu {
-    //@media (max-width: breakpoint("md") - 0.1) {
+    width: 42rem;
+
+    @media (max-width: breakpoint("md") - 0.1) {
       display: none !important;
-    //}
+    }
   }
 
   &__socialMenu {
-    //@media (max-width: breakpoint("md") - 0.1) {
+    @media (max-width: breakpoint("md") - 0.1) {
       display: none !important;
-    //}
+    }
   }
 }

@@ -1,7 +1,7 @@
 /*
 Theme Name: Koshinokuni
 Description: This is a theme for Koshinokuni.
-Version: 1.1
+Version: 1.2
 Requires PHP: 7.4
 Author: Taigo Ito
 Author URI: https://qwel.design/
@@ -51,6 +51,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 @import "objects/projects/activity";
 @import "objects/projects/spot";
 @import "objects/projects/postItem";
+@import "objects/projects/postList";
+//@import "objects/projects/section";
 
 // Utility
 @import "objects/utilities/flex";

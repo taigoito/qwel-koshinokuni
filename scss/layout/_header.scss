@@ -8,4 +8,16 @@
   left: 0;
   z-index: 1000;
   width: 100%;
+
+  &__inner {
+    padding-left: var(--wp--custom--spacing--container-pad-wide);
+    padding-right: var(--wp--custom--spacing--container-pad-wide);
+    background-color: $bodyBg;
+    opacity: 0.7;
+    transition: .25s opacity ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
