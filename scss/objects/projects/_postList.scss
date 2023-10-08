@@ -7,8 +7,8 @@
     @include row();
 
     .post {
-      @include col();
-      @include col(4, "md");
+      @include col(4, false, "md");
+      margin-bottom: space(3);
     }
 
     .postItem {
@@ -42,7 +42,7 @@
       gap: 0 !important;
 
       &__image {
-        @include col(2, "md", ture);
+        @include col(2, ture, "md");
 
         .wp-block-post-featured-image {
           margin: 0;
@@ -50,7 +50,7 @@
       }
 
       &__content {
-        @include col(6, "md", ture);
+        @include col(6, ture, "md");
       }
 
       &__heading {
